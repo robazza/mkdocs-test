@@ -1,0 +1,151 @@
+# Project information
+site_name: Site Name no YML
+site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: Martin Donath
+site_description: >-
+  Create a branded static site from a set of Markdown files to host the
+  documentation of your Open Source or commercial project – customizable,
+  searchable, mobile-friendly, 40+ languages
+
+# Repository
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2020 Martin Donath
+
+# Configuration
+theme:
+  name: material
+  custom_dir: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - tabs
+    #- instant
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+  favicon: assets/favicon.png
+
+# Plugins
+plugins:
+  - search
+  - macros
+#  - minify:
+#      minify_html: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/squidfunk
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Home: getting-started
+  - Md Exemplo: markdown-example.md
+  - Md Exemplo2: markdown-example.md
+  
+  - Visão Geral:
+    - ee1: 
+      - eee: visao-geral/one.md
+      - eee1: level/one.md
+    - ee2: 
+      - eee2: visao-geral/one.md
+  - Estrutura e Serviços:
+    - Admonition: level/one.md
+  - Papéis:
+    - Admonition: level/one.md
+  - Políticas:
+    - Admonition: level/one.md
+  - Ciclos de Vida:
+    - Admonition: level/one.md
+  - Processos:
+    - processos/requisitos.md
+  - Templates:
+    - Admonition: level/one.md
+  - Ferramentas:
+    - Admonition: level/one.md
+  - Guias e Procedimentos:
+    - Admonition: level/one.md
+  - Padrões:
+    - Admonition: level/one.md
+  - Tarefas:
+    - Processo de Requisitos: 
+      - processos/tarefas/levantar-requisitos.md
+      - processos/tarefas/escrever-requisitos.md
+    - Processo de Exemplo: 
+      - processos/tarefas/levantar-exemplo.md
+      - processos/tarefas/escrever-exemplo.md
+
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
