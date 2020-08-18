@@ -1,0 +1,9 @@
+.md-header-nav__source, .md-announce, .md-nav__title{display:none !important;}
+
+.md-header{
+	background-color: var(--md-primary-fg-color);
+    box-shadow: 0 0 0.2rem rgba(0,0,0,.1), 0 0.2rem 0.4rem rgba(0,0,0,.2);
+    transition: color 250ms,background-color 250ms,box-shadow 250ms;;
+	}
+	
+body{font-family: "Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;}

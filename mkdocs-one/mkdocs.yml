@@ -1,25 +1,22 @@
 # Project information
-site_name: Site Name no YML
+site_name: Portal de Processos SEFAZ
 site_url: https://squidfunk.github.io/mkdocs-material/
 site_author: Martin Donath
 site_description: >-
-  Create a branded static site from a set of Markdown files to host the
-  documentation of your Open Source or commercial project – customizable,
-  searchable, mobile-friendly, 40+ languages
+  A Coordenadoria de Tecnologia da Informação e Comunicação - COT, 
+  apresenta o Portal de Processos, com o objetivo de melhorar a qualidade dos produtos desenvolvidos,
+  contendo a metodologia de trabalho para nortear a prestação dos seus serviços de forma mais eficaz
 
-# Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
-edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2020 Martin Donath
+copyright: Copyright &copy; 2020 COT SEFAZ
 
 # Configuration
 theme:
   name: material
   custom_dir: material
-
+  config[extra_css]: extra_css/sefaz.css
+ 
   # 404 page
   static_templates:
     - 404.html
@@ -33,6 +30,7 @@ theme:
   features:
     - tabs
     #- instant
+    - navigation.expand
   palette:
     scheme: default
     primary: indigo
@@ -41,9 +39,13 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    logo: logo
-  favicon: assets/favicon.png
+  logo: icoPPS.png
+  favicon: favicon.png
 
+  config[extra_js]: mermaid.min.js
+  extra_javascript:
+  - https://cdn.rawgit.com/knsv/mermaid/0.5.6/dist/mermaid.min.js
+  
 # Plugins
 plugins:
   - search
@@ -51,26 +53,17 @@ plugins:
 #  - minify:
 #      minify_html: true
 
-# Customization
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/squidfunk/
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/squidfunk
+
+extra_javascript :
+    - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
 
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.attr_list
+  - markdown.extensions.tables
+  - markdown.extensions.abbr
+  - markdown.extensions.md_in_html
   - markdown.extensions.codehilite:
       guess_lang: false
   - markdown.extensions.def_list
@@ -78,6 +71,8 @@ markdown_extensions:
   - markdown.extensions.meta
   - markdown.extensions.toc:
       permalink: true
+      #toc_depth: 2
+      #baselevel: 2
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -87,8 +82,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/icons
   # - pymdownx.highlight:
-  #     linenums_style: pymdownx-inline
+    # linenums_style: pymdownx-inline
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -99,7 +97,11 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.snippets:
       check_paths: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+       - name: mermaid
+         class: mermaid
+         format: !!python/name:pymdownx.superfences.fence_div_format       
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -110,41 +112,41 @@ nav:
   - Home: index.md
   - Home: getting-started
   - Md Exemplo: markdown-example.md
-  - Md Exemplo2: markdown-example.md
-  
-  - Visão Geral:
-    - ee1: 
-      - eee: visao-geral/one.md
-      - eee1: level/one.md
-    - ee2: 
-      - eee2: visao-geral/one.md
-  - Estrutura e Serviços:
-    - Admonition: level/one.md
+  - Md Exemplo2: markdown-example.md  
+  - Estrutura e Serviços: 
+    - Estrutura: 'estrutura/index.md'
+  - Processos:
+    - Processos:  
+      - Desenvolvimento de software: 'processos/index.md' 
   - Papéis:
-    - Admonition: level/one.md
+    - Papéis: 'papeis/index.md'
+    - Administrador de Dados: 'papeis/admdados.md'
+    - Analista de Requisitos: 'papeis/analistarequisitos.md'
+    - Analista de Testes: 'papeis/analistatestes.md'
+    - Área de Infraestrutura: 'papeis/areainfra.md'
+    - Arquiteto de Software: 'papeis/arquitetosoftware.md'
+    - Auditor de Negócio: 'papeis/auditornegocio.md'
+    - Coordenação de Tecnologia e Comunicação: 'papeis/cot.md'
+    - Consultor de Negócio: 'papeis/consultornegocios.md'
+    - DBA: 'papeis/dba.md'
+    - Desenvolvedor: 'papeis/desenvolvedor.md'
+    - Qualidade e Governança: 'papeis/governanca.md'
+    - Gestor de Negócio: 'papeis/gestornegocio.md'
+    - Gerente de Projeto: 'papeis/gerenteprojeto.md'
+    - Grupos Envolvidos: 'papeis/grupos.md'
+    - Líder do Projeto: 'papeis/liderprojeto.md'
+    - Tester : 'papeis/tester.md'
   - Políticas:
     - Admonition: level/one.md
-  - Ciclos de Vida:
-    - Admonition: level/one.md
-  - Processos:
-    - processos/requisitos.md
+  - Ciclos de Vida: 
+    - Ciclo de Vida: ciclodevida.md
   - Templates:
     - Admonition: level/one.md
   - Ferramentas:
     - Admonition: level/one.md
-  - Guias e Procedimentos:
+  - Procedimentos e Padrões:
     - Admonition: level/one.md
-  - Padrões:
-    - Admonition: level/one.md
-  - Tarefas:
-    - Processo de Requisitos: 
-      - processos/tarefas/levantar-requisitos.md
-      - processos/tarefas/escrever-requisitos.md
-    - Processo de Exemplo: 
-      - processos/tarefas/levantar-exemplo.md
-      - processos/tarefas/escrever-exemplo.md
-
-
+    
 # Google Analytics
 google_analytics:
   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]

@@ -1,79 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://squidfunk.github.io/mkdocs-material/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/markdown-example/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/markdown-example/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/visao-geral/one/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <loc>https://squidfunk.github.io/mkdocs-material/estrutura/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/processos/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/admdados/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/analistarequisitos/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/analistatestes/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/areainfra/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/arquitetosoftware/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/auditornegocio/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/cot/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/consultornegocios/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/dba/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/desenvolvedor/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/governanca/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/gestornegocio/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/gerenteprojeto/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/grupos/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/liderprojeto/</loc>
+     <lastmod>2020-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/papeis/tester/</loc>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/visao-geral/one/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <loc>https://squidfunk.github.io/mkdocs-material/ciclodevida/</loc>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/processos/requisitos/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/level/one/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/processos/tarefas/levantar-requisitos/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/processos/tarefas/escrever-requisitos/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/processos/tarefas/levantar-exemplo/</loc>
-     <lastmod>2020-05-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://squidfunk.github.io/mkdocs-material/processos/tarefas/escrever-exemplo/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

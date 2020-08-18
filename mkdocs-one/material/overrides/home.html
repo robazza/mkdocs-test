@@ -28,6 +28,8 @@
 
   <!-- Additional styles for landing page -->
   <style>
+  
+  .md-tabs{display:none;}
 
     /* Application header should be static for the landing page */
     .md-header {
@@ -52,7 +54,7 @@
         linear-gradient(
           to bottom,
           var(--md-primary-fg-color),
-          hsla(280deg, 67%, 55%, 1) 99%,
+          hsla(187deg, 67%, 55%, 1) 99%,
           white 99%
         );
     }
@@ -129,7 +131,7 @@
 
       /* Swap with teaser and set dimensions */
       .tx-hero__image {
-        width: 38rem;
+        width: 18rem;
         order: 1;
         transform: translateX(4rem);
       }
@@ -145,7 +147,7 @@
 
       /* Ensure the image aligns with the repository information */
       .tx-hero__image {
-        transform: translateX(8rem);
+        transform: translateX(30rem);
       }
     }
   </style>
@@ -158,33 +160,51 @@
         <!-- Hero image -->
         <div class="tx-hero__image">
           <img
-            src="assets/images/illustration.png"
+            src="assets/images/home.png"
             alt=""
-            width="1659"
-            height="1200"
             draggable="false"
           >
         </div>
 
         <!-- Hero content -->
         <div class="tx-hero__content">
-          <h1>Technical documentation that just works</h1>
-          <p>{{ config.site_description }}. Set up in 5 minutes.</p>
+          <h1>Bem-Vindo ao Portal de Processos da SEFAZ PMS</h1>
+          <p>{{ config.site_description }}.</p>
           <a
             href="{{ page.next_page.url | url }}"
             title="{{ page.next_page.title | striptags }}"
             class="md-button md-button--primary"
           >
-            Get started
+            Tutoriais 
           </a>
-          <a
-            href="{{ config.repo_url }}"
-            title="{{ lang.t('source.link.title') }}"
-            class="md-button"
-          >
-            Go to GitHub
-          </a>
-        </div>
+            </div>
+		 <div class="tx-hero_boxes">
+		 <div class="cardHome">
+		 <a href="../estrutura/">Estrutura e Servi&ccedil;os</a>
+		 </div>
+		  <div class="cardHome">
+		 <a href="../processos/">Processos</a>
+		 </div>
+		  <div class="cardHome">
+		   <a href="../papeis/">Pap&eacute;is</a>
+		 </div>
+		  <div class="cardHome">
+		<a href="../politicas/">Pol&iacute;ticas</a>
+		 </div>
+		  <div class="cardHome">
+		 <a href="./ciclodevida/">Ciclos de Vida</a>
+		 </div>		 
+		  <div class="cardHome">
+		 <a href="../templates/">Templates</a>
+		 </div>
+		  <div class="cardHome">
+		 <a href="./requisitos">Ferramentas</a>
+		 </div>
+		  <div class="cardHome">
+		 <a href="../procedimentospadroes/">Procedimentos e Padr&otilde;es</a>
+		 </div>
+		 
+		 </div>
       </div>
     </div>
   </section>
@@ -195,3 +215,4 @@
 
 <!-- Application footer -->
 {% block footer %}{% endblock %}
+
